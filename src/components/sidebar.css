@@ -52,10 +52,21 @@
 }
 
 /* Override Bootstrap defaults for sidebar */
-.sidebar {
+/* .sidebar {
   height: 100vh;
   width: 256px;
   position: relative;
+  flex-shrink: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-right: 1px solid;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+} */
+.sidebar {
+  height: 100vh;
+  width: 256px;
+  position: sticky; /* Use sticky instead of fixed */
+  top: 0; /* Add this */
   flex-shrink: 0;
   overflow-x: hidden;
   overflow-y: auto;
