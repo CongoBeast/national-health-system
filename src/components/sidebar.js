@@ -216,22 +216,22 @@ const Sidebar = ({ userRole, show, onHide }) => {
 
   const sidebarItems = {
     doctor: [
-      { name: "My Patients", icon: <Users size={18} />, href: "#patients" },
+      { name: "My Patients", icon: <Users size={18} />, href: "/#/patient-list" , onClick: handleNavClick },
       { name: "Attendance", icon: <ClipboardCheck size={18} />, href: "#attendance" },
-      { name: "Schedule", icon: <Calendar size={18} />, href: "#schedule" },
-      { name: "Lab Records", icon: <Activity size={18} />, href: "#lab-records" },
-      { name: "Prescriptions", icon: <Pill size={18} />, href: "#prescriptions" },
+      { name: "Schedule", icon: <Calendar size={18} />, href: "/#/schedule" , onClick: handleNavClick},
+      { name: "Lab Records", icon: <Activity size={18} />, href: "/#/lab-results" , onClick: handleNavClick},
+      { name: "Prescriptions", icon: <Pill size={18} />, href: "/#/prescriptions" , onClick: handleNavClick },
       { divider: true },
-      { name: "View Profile", icon: <User size={18} />, href: "#profile" },
+      { name: "View Profile", icon: <User size={18} />, href: "/#/doctor" , onClick: handleNavClick},
       { name: "Log Out", icon: <LogOut size={18} />, onClick: handleLogout ,  }
     ],
     patient: [
-      { name: "My Records", icon: <FileText size={18} />, href: "#records" },
+      { name: "My Records", icon: <FileText size={18} />, href: "/#/patient-records" , onClick: handleNavClick },
       { name: "My Doctors", icon: <Stethoscope size={18} />, href: "#doctors" },
       { name: "Prescriptions", icon: <Pill size={18} />, href: "#prescriptions" },
       { name: "Bookings", icon: <BookOpen size={18} />, href: "#bookings" },
       { divider: true },
-      { name: "View Profile", icon: <User size={18} />, href: "#profile" },
+      { name: "View Profile", icon: <User size={18} />, href: "/#/patient" , onClick: handleNavClick },
       { name: "Log Out", icon: <LogOut size={18} />, onClick: handleLogout }
     ],
     admin: [
