@@ -231,9 +231,9 @@ const TopNavbar = ({ userRole = localStorage.userType }) => {
     ],
     patient: [
       { name: "My Records", icon: <FileText size={18} />, href: "/patient-records"},
-      { name: "My Doctors", icon: <Stethoscope size={18} />, href: "#doctors" },
+      { name: "My Doctors", icon: <Stethoscope size={18} />, href: "/mydoctors" },
       { name: "Prescriptions", icon: <Pill size={18} />, href: "/prescriptions" },
-      { name: "Bookings", icon: <BookOpen size={18} />, href: "#bookings" },
+      { name: "Bookings", icon: <BookOpen size={18} />, href: "/mybookings" },
       { name: "View Profile", icon: <User size={18} />, href: "/patient" },
       { name: "Log Out", icon: <LogOut size={18} />, onClick: handleLogout }
     ],
