@@ -74,7 +74,9 @@ import DoctorLabResults from "./pages/DoctorLabResults.js"
 import PrescriptionReview from "./pages/PrescriptionReview.js"
 import DoctorSchedule from "./pages/DoctorSchedule.js"
 import PatientRecords from "./pages/PatientRecords.js"
-
+import PatientCareTeam from "./pages/PatientCareTeam.js"
+import PatientBookings from "./pages/PatientBookings.js"
+import FacilityResourceManagement from "./pages/FacilityResourceManagement.js"
 
 
 
@@ -148,6 +150,11 @@ function App() {
               <ManageFacility/>
             </ProtectedRoute>
           }/>
+          <Route path="/facility-resources" element={
+            <ProtectedRoute>
+              <FacilityResourceManagement/>
+            </ProtectedRoute>
+          }/>
           <Route path="/pandemicmanagement" element={
             <ProtectedRoute>
               <PandemicManagement/>
@@ -176,6 +183,17 @@ function App() {
           <Route path="/patient-records" element={
             <ProtectedRoute>
               <PatientRecords/>
+              <PatientCareTeam/>
+            </ProtectedRoute>
+          }/>
+          <Route path="/mydoctors" element={
+            <ProtectedRoute>
+              <PatientCareTeam/>
+            </ProtectedRoute>
+          }/>
+          <Route path="/mybookings" element={
+            <ProtectedRoute>
+              <PatientBookings/>
             </ProtectedRoute>
           }/>
           <Route path="/audit-reports" element={
