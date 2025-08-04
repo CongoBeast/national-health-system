@@ -1,5 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { Building2, Hospital, Heart, MapPin, Search, Download, Edit, Trash2, Users, Calendar, Activity, Phone } from 'lucide-react';
+import { Link, useLocation, useNavigate } from "react-router-dom";
+
 
 const FacilitiesManagement = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -9,6 +11,8 @@ const FacilitiesManagement = () => {
   const [selectedStatus, setSelectedStatus] = useState('all');
   const [selectedFacilities, setSelectedFacilities] = useState([]);
   const [selectAll, setSelectAll] = useState(false);
+
+  const navigate = useNavigate()
 
   // Zimbabwe regions
   const zimbabweRegions = [
@@ -179,6 +183,10 @@ const FacilitiesManagement = () => {
       director: 'Dr. Nyaradzo Sibanda'
     }
   ];
+
+  const handleClick = () => {
+    navigate("/managefacility")
+  }
 
   // Calculate stats
   const stats = useMemo(() => {
@@ -604,7 +612,7 @@ const FacilitiesManagement = () => {
                             />
                           </div>
                           
-                          <div className="col-auto">
+                          <div className="col-auto" onClick={handleClick}>
                             <div 
                               className="rounded-circle p-3 d-flex align-items-center justify-content-center"
                               style={{ backgroundColor: getLevelColor(facility.level), width: '60px', height: '60px' }}
