@@ -967,7 +967,7 @@ const AuthPage = () => {
         formDataImage.append('image', avatarFile);
 
         // Replace with your upload endpoint
-        const uploadRes = await fetch('https://national-health-system-backend.onrender.com/upload', {
+        const uploadRes = await fetch('https://national-health-system-backend-k54t.onrender.com/upload', {
           method: 'POST',
           body: formDataImage,
         });
@@ -987,7 +987,7 @@ const AuthPage = () => {
         lastLoggedIn: new Date().toISOString(),
       };
 
-      const response = await fetch(`https://national-health-system-backend.onrender.com/${endpoint}`, {
+      const response = await fetch(`https://national-health-system-backend-k54t.onrender.com/${endpoint}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -1674,5 +1674,6 @@ const AuthPage = () => {
     </>
   );
 };
+
 
 export default AuthPage;
