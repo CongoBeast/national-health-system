@@ -6,16 +6,16 @@ const DoctorProfile = () => {
 
   // Sample doctor data
   const doctor = {
-    name: "Dr. Emily Wilson",
+    name: "Dr. Micheal Mhlanga",
     specialty: "Cardiology",
     id: "DOC-2024-00542",
     department: "Cardiovascular Department",
     experience: "12 years",
-    education: "MD, Harvard Medical School",
+    education: "MD, University of Zimbabwe Medical School",
     phone: "+1 (555) 987-6543",
-    email: "emily.wilson@hospital.com",
+    email: "micheal.mhlanga@hospital.com",
     office: "Room 302, Cardiology Wing",
-    avatar: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=150&h=150&fit=crop&crop=face",
+    avatar: "https://images.unsplash.com/photo-1605602517387-ec78b947335e?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJsYWNrJTIwZG9jdG9yfGVufDB8fDB8fHww",
     license: "MD-IL-2012-4567"
   };
 
@@ -71,7 +71,7 @@ const DoctorProfile = () => {
   // Sample patients
   const patients = [
     { 
-      name: "John Smith", 
+      name: "James Mugariri", 
       id: "PT-2024-001234", 
       condition: "Hypertension", 
       lastVisit: "2024-07-20",
@@ -79,7 +79,7 @@ const DoctorProfile = () => {
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face"
     },
     { 
-      name: "Mary Johnson", 
+      name: "Linda Taderere", 
       id: "PT-2024-001456", 
       condition: "Arrhythmia", 
       lastVisit: "2024-07-18",
@@ -87,7 +87,7 @@ const DoctorProfile = () => {
       avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=50&h=50&fit=crop&crop=face"
     },
     { 
-      name: "Robert Davis", 
+      name: "Takunda Mazowe", 
       id: "PT-2024-001789", 
       condition: "Post-Surgery", 
       lastVisit: "2024-07-15",
@@ -107,7 +107,7 @@ const DoctorProfile = () => {
   // Sample lab results ordered
   const labResults = [
     {
-      patient: "John Smith",
+      patient: "Zake Koshai",
       test: "Lipid Panel",
       ordered: "2024-07-20",
       status: "Completed",
@@ -115,7 +115,7 @@ const DoctorProfile = () => {
       priority: "Normal"
     },
     {
-      patient: "Mary Johnson",
+      patient: "Takunda Mazowe",
       test: "Cardiac Enzymes",
       ordered: "2024-07-18",
       status: "Pending",
@@ -123,7 +123,7 @@ const DoctorProfile = () => {
       priority: "Urgent"
     },
     {
-      patient: "Robert Davis",
+      patient: "Linda Taderere",
       test: "ECG",
       ordered: "2024-07-15",
       status: "Completed",
@@ -131,7 +131,7 @@ const DoctorProfile = () => {
       priority: "Normal"
     },
     {
-      patient: "Lisa Brown",
+      patient: "James Mugariri",
       test: "Stress Test",
       ordered: "2024-07-12",
       status: "Scheduled",
@@ -139,7 +139,7 @@ const DoctorProfile = () => {
       priority: "High"
     },
     {
-      patient: "Michael Wilson",
+      patient: "Rachel Mguni",
       test: "Echocardiogram",
       ordered: "2024-07-10",
       status: "Completed",
@@ -566,5 +566,6 @@ const DoctorProfile = () => {
     </>
   );
 };
+
 
 export default DoctorProfile;
