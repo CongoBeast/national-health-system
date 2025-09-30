@@ -85,7 +85,7 @@ const Sidebar = ({ userRole, show, onHide }) => {
       { name: "Pandemic Management", icon: <Megaphone size={18} />, href: "/#/pandemicmanagement" , onClick: handleNavClick},
       { name: "System Settings", icon: <Settings size={18} />, href: "#settings" },
       { divider: true },
-      { name: "View Profile", icon: <User size={18} />, href: "#profile" },
+      // { name: "View Profile", icon: <User size={18} />, href: "#profile" },
       { name: "Log Out", icon: <LogOut size={18} />, onClick: handleLogout }
     ]
   };
@@ -122,11 +122,11 @@ const Sidebar = ({ userRole, show, onHide }) => {
   const getUserName = () => {
     switch(userRole) {
       case 'doctor':
-        return 'Dr. Smith';
+        return 'Dr. Tshuma';
       case 'patient':
-        return 'John Doe';
+        return 'Simon Dube';
       case 'admin':
-        return 'Admin User';
+        return 'Lucky Moyo';
       default:
         return 'User';
     }
@@ -188,5 +188,6 @@ const Sidebar = ({ userRole, show, onHide }) => {
     </>
   );
 };
+
 
 export default Sidebar;
